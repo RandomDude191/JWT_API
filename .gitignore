@@ -1,0 +1,7 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/JWT_API/bin/Debug/net7.0
+/JWT_API/obj
+/.vs
