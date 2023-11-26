@@ -36,7 +36,7 @@ namespace JWT_API.Controllers
 
         [AllowAnonymous]
         [HttpPost("/tokens/connect")]
-        public async Task<IResult> Token() // Returning an IResult is only fully support in .NET 7 and above. Other it gets wrapped in an IActionResult which messes up with the status code.
+        public async Task<IResult> Token() // Returning an IResult is only fully support in .NET 7 and above. Otherwise it gets wrapped in an IActionResult which messes up with the status code.
         {
             var result = await TokenEndpoint.Connect(HttpContext, jwtOptions);
 

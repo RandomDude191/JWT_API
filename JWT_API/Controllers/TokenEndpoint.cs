@@ -5,7 +5,7 @@ using System.Text;
 
 public static class TokenEndpoint
 {
-    private static readonly IResult badRequest = Results.BadRequest(new { Error = "Invalid Request" });
+    private static readonly IResult badRequest = TypedResults.BadRequest(new { Error = "Invalid Request" });
 
     public static async Task<IResult> Connect(HttpContext ctx, JwtOptions jwtOptions)
     {
